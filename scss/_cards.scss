@@ -1,0 +1,70 @@
+
+.promociones1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 40px;
+    .cardSemi{
+        background-color: $color-card1;
+        /*width: 25%;
+        margin-top: 10px;*/
+        width: 180px;
+        height: 340px;
+        padding: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+            img {  
+                height: 200px;  
+                width: 180px;
+                border: solid 5px lightseagreen;
+        }
+        a {
+            position: relative;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            background-color: blue;
+            color: white;         
+            }  
+    }
+    .cardDiseño {
+        background-color: $color-card2;
+        /*width: 25%;
+        margin-top: 10px;*/
+        width: 180px;
+        height: 340px;
+        border: solid 2px pink;
+        padding: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        img{
+            width: 180px;
+            border: solid 5px pink
+        }
+        a {
+            position: relative;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            background-color: blue;
+            color: white;         
+            }     
+    }
+}
+
+@media (max-width: 1023px) {
+    .promociones1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .promociones1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

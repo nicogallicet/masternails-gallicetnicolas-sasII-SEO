@@ -1,0 +1,122 @@
+@charset "UTF-8";
+table {
+  font-size: 1rem;
+  text-align: center;
+  background-color: pink;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  text-decoration: none; }
+
+.promociones1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 40px; }
+  .promociones1 .cardSemi {
+    background-color: pink;
+    /*width: 25%;
+        margin-top: 10px;*/
+    width: 180px;
+    height: 340px;
+    padding: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative; }
+
+    .promociones1 .cardSemi img {
+      height: 200px;
+      width: 180px;
+      border: solid 5px lightseagreen; }
+      
+    .promociones1 .cardSemi a {
+      position: relative;
+      text-decoration: none;
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      background-color: blue;
+      color: white; }
+  .promociones1 .cardDiseño {
+    background-color: lightseagreen;
+    /*width: 25%;
+        margin-top: 10px;*/
+    width: 180px;
+    height: 340px;
+    border: solid 2px pink;
+    padding: 50px;
+    display: inline-block;
+    vertical-align: middle; }
+    .promociones1 .cardDiseño img {
+      width: 180px;
+      border: solid 5px pink; }
+    .promociones1 .cardDiseño a {
+      position: relative;
+      text-decoration: none;
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      background-color: blue;
+      color: white; }
+
+@media (max-width: 1023px) {
+  .promociones1 {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 767px) {
+  .promociones1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+.Titulo1 {
+  display: grid;
+  justify-content: center;
+  background-color: lightblue;
+  color: white; }
+
+nav .lista-navegacion {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none; }
+  nav .lista-navegacion .navegacion a {
+    text-decoration: none;
+    color: black; }
+
+li:hover {
+  background-color: lightblue;
+  padding: 10px; }
+
+.planes {
+  background-color: pink; }
+  .planes h2 {
+    color: black;
+    font-family: "Hurricane";
+    text-align: center;
+    font-size: 2.5rem; }
+    .planes h2 .textoMembresia {
+      display: grid;
+      justify-items: center;
+      font-size: 1.5rem; }
+
+.promociones, footer {
+  display: grid;
+  justify-items: center; }
+  .promociones .promos, footer .promos {
+    background-color: lightseagreen;
+    font-size: 2rem; }
+
+/*mixin*/
+.beneficios {
+  background-color: pink;
+  font-size: 1.5rem; }
+
+@media (max-width: 1023px) {
+  #cursos {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 767px) {
+  #cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
